@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Container, Menu, ModalMenu, ShoppingBag } from "./styles"
+import { Container, Menu, ModalMenu, Navbar, ShoppingBag } from "./styles"
 import { MdOutlineShoppingBag } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 import { CgClose } from "react-icons/cg";
@@ -29,6 +29,14 @@ export function Header(){
             </Menu>
 
             <h1>STC</h1>
+
+            <Navbar>
+                <li>Minha conta</li>
+                <li>Meus pedidos</li>
+                <li>Vestuário</li>
+                <li>Acessórios</li>
+                <li>Calçados</li>
+            </Navbar>
 
             <ShoppingBag>
                 <MdOutlineShoppingBag size={26}/>

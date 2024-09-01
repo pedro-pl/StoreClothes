@@ -10,10 +10,14 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
+
+    svg{
+        cursor: pointer;
+    }
 `
 
 export const ShoppingBag = styled.div`
-    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -21,11 +25,14 @@ export const ShoppingBag = styled.div`
 `
 
 export const Menu = styled.div`
-    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 901px){
+        display: none;
+    }
 `
 
 export const ModalMenu = styled.div<IsOpenProps>`
@@ -48,6 +55,7 @@ export const ModalMenu = styled.div<IsOpenProps>`
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        cursor: pointer;
 
         svg{
             align-self: flex-start;
@@ -57,5 +65,22 @@ export const ModalMenu = styled.div<IsOpenProps>`
 
     svg{
         align-self: flex-end;
+    }
+`
+
+export const Navbar = styled.nav`
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 901px){
+        display: none;
+    }
+
+    li{
+        list-style: none;
+        cursor: pointer;
     }
 `
