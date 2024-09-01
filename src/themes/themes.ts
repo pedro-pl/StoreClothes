@@ -5,4 +5,5 @@ export const defaultTheme = {
     'green-200': '#52b788',
     'red': '#ef233c',
     'white': '#FFF',
+    'off-white': '#fefae0',
 }
