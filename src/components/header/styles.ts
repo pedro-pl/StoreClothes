@@ -47,6 +47,7 @@ export const ModalMenu = styled.div<IsOpenProps>`
     z-index: 999;
     padding: 10px;
     gap: 1.5rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 
     li{
         list-style: none;
