@@ -4,8 +4,9 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: ${(props) => props.theme['blue-100']};
-    padding: 0 5% 0 5%;
+    padding: 0 10% 0 10%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 `
 
