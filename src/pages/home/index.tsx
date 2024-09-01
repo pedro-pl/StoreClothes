@@ -1,5 +1,6 @@
 import { Header } from "../../components/header";
 import { SearchBar } from "../../components/SearchBar";
+import { Section } from "./components/Section";
 import { Container } from "./styles";
 
 export function Home(){
@@ -7,6 +8,7 @@ export function Home(){
         <Container>
             <Header/>
             <SearchBar/>
+            <Section Title="Lançamentos"/>
         </Container>
     )
 }
