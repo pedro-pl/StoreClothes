@@ -10,7 +10,6 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
 
     svg{
         cursor: pointer;
@@ -40,7 +39,7 @@ export const ModalMenu = styled.div<IsOpenProps>`
     height: 100vh;
     position: absolute;
     margin-top: 90vh;
-    margin-left: ${(props) => props.isOpen ? "-4.5vw" : "-70vw"};
+    margin-left: ${(props) => props.isOpen ? "-10vw" : "-70vw"};
     background-color: ${(props) => props.theme['white']};
     transition: 0.3s;
     display: flex;
@@ -81,6 +80,13 @@ export const Navbar = styled.nav`
 
     li{
         list-style: none;
+        border: 1.5px;
         cursor: pointer;
+        transition: 1s;
+
+        &:hover{
+            border-bottom: 1.5px solid ${(props) => props.theme['black']};
+            transition: 1s;
+        }
     }
 `
