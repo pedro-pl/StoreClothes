@@ -1,5 +1,5 @@
 import { Header } from "../../components/header";
-import { SearchBar } from "../../components/SearchBar";
+import { SearchBar } from "../../components/searchBar";
 import { Section } from "./components/Section";
 import { Container } from "./styles";
 

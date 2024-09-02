@@ -8,16 +8,18 @@ import { BsBoxSeam } from "react-icons/bs";
 import { IoShirtOutline } from "react-icons/io5";
 import { IoGlassesOutline } from "react-icons/io5";
 import { GiConverseShoe } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 
 export function Header(){
     const [isOpenMenu, setIsOpenMenu] = useState(false);
+    const navigate = useNavigate();
 
     return(
         <Container>
             <ModalMenu isOpen={isOpenMenu}>
                 <CgClose size={24} onClick={() => setIsOpenMenu(false)}/>
 
-                    <li><IoPersonOutline size={20}/> Minha conta</li>
+                    <li onClick={() => navigate('/cadastro')}><IoPersonOutline size={20}/> Minha conta</li>
                     <li><BsBoxSeam size={20}/> Meus pedidos</li>
                     <li><IoShirtOutline size={20}/> Vestuário</li>
                     <li><IoGlassesOutline size={20}/> Acessórios</li>
@@ -28,7 +30,7 @@ export function Header(){
                 <FiMenu size={26} onClick={() => setIsOpenMenu(true)}/>
             </Menu>
 
-            <h1>STC</h1>
+            <h1 onClick={() => navigate('/')}>STC</h1>
 
             <Navbar>
                 <li>Minha conta</li>
