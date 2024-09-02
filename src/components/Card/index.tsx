@@ -2,21 +2,28 @@ import { useState } from "react";
 import { BuyButton, Container, ImageClothing, NameClothing, PriceClothing } from "./styles";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
-export function Card(){
-    const [fav, setFav] = useState(false)
+interface ClothingProps {
+    url: string,
+    price: number
+}
+
+export function Card(props: ClothingProps){
+    const [fav, setFav] = useState(false);
+    const navigate = useNavigate();
 
     return(
         <Container isFav={fav}>
             {
                 fav ? <IoMdHeart size={22} onClick={() => setFav(false)} /> : <IoMdHeartEmpty size={22} onClick={() => setFav(true)}/>
             }
-            <ImageClothing src="https://bawclothing.vtexassets.com/arquivos/ids/277011/0077030024_01.jpg?v=638356172995800000"/>
+            <ImageClothing src="https://images.tcdn.com.br/img/img_prod/1258065/camiseta_oversized_crista_unissex_para_todos_9_1_9689be74aeab08d2044f184ea37c3fe0.jpg" onClick={() => navigate('/produto')}/>
 
-            <BuyButton>COMPRAR</BuyButton>
+            <BuyButton  onClick={() => navigate('/produto')}>COMPRAR</BuyButton>
 
             <NameClothing>Camiseta</NameClothing>
-            <PriceClothing>R$ 79,90</PriceClothing>
+            <PriceClothing>R$ {props.price.toString().replace('.', ',')}</PriceClothing>
         </Container>
     )
 }

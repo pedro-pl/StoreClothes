@@ -19,4 +19,8 @@ export const ContainerCard = styled.div`
     overflow-x: auto;
     white-space: nowrap;
     gap: 1rem;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 `
