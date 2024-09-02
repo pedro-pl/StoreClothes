@@ -5,7 +5,7 @@ export function Product(){
     return(
         <Container>
             <Header/>
-            <h3>PÁGINA DE PRODUTO</h3>
+            <h3>PÁGINA DO PRODUTO</h3>
         </Container>
     )
 }
