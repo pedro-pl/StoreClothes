@@ -19,6 +19,19 @@ export const Container = styled.div <FavProps>`
         align-self: flex-end;
         margin: 10px 10px 0 0;
         color: ${(props) => props.isFav ? props.theme['red'] : props.theme['gray-900']};
+        cursor: pointer;
+    }
+
+    @media (max-height: 400px) or (min-width: 500px){
+        width: 30%;
+    }
+
+    @media (min-width: 1000px){
+        width: 18%;
+    }
+
+    @media (min-height: 950px){
+        width: 30%;
     }
 `
 
@@ -35,6 +48,13 @@ export const BuyButton = styled.button`
     outline: none;
     color: ${(props) => props.theme['white']};
     font-size: 1.1rem;
+    cursor: pointer;
+    transition: all.3s;
+
+    &:hover{
+        transition: all.3s;
+        background-color: ${(props) => props.theme['green-300']};
+    }
 `
 
 export const NameClothing = styled.p`
