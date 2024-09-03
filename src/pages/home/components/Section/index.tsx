@@ -1,7 +1,7 @@
 import { Container, ContainerCard } from "./styles";
 import { shirt } from "../../../../mocks/shirts";
 import React from "react";
-import { Card } from "../../../../components/card/index.tsx";
+import { Card } from "../../../../components/card/index";
 
 interface SectionProps {
     Title: string
