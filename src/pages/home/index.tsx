@@ -1,5 +1,5 @@
 import { Header } from "../../components/header";
-import { Section } from "./components/Section";
+import { Section } from "./components/section";
 import { Container } from "./styles";
 
 export function Home(){
