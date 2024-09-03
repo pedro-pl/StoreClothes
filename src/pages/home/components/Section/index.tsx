@@ -1,7 +1,7 @@
-import { Card } from "../../../../components/card";
 import { Container, ContainerCard } from "./styles";
 import { shirt } from "../../../../mocks/shirts";
 import React from "react";
+import { Card } from "../../../../components/card";
 
 interface SectionProps {
     Title: string
