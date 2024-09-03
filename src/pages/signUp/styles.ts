@@ -9,3 +9,19 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
+export const ContainerCard = styled.div`
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1rem;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+`
