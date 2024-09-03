@@ -3,7 +3,7 @@ export const shirt = [
         id: 1,
         url: "https://images.tcdn.com.br/img/img_prod/1258065/camiseta_oversized_crista_unissex_para_todos_9_1_9689be74aeab08d2044f184ea37c3fe0.jpg",
         price: 89.99,
-        name: "Camiseta 'Jesus is everyone"
+        name: 'Camiseta "Jesus is everyone"'
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const shirt = [
         id: 3,
         url: "https://images.tcdn.com.br/img/img_prod/1258065/camiseta_oversized_crista_unissex_para_todos_9_1_9689be74aeab08d2044f184ea37c3fe0.jpg",
         price: 89.99,
-        name: "Camiseta 'Jesus is for everyone"
+        name: 'Camiseta "Jesus is for everyone"'
     },
     {
         id: 4,
@@ -27,7 +27,7 @@ export const shirt = [
         id: 5,
         url: "https://images.tcdn.com.br/img/img_prod/1258065/camiseta_oversized_crista_unissex_para_todos_9_1_9689be74aeab08d2044f184ea37c3fe0.jpg",
         price: 89.99,
-        name: "Camiseta 'Jesus is for everyone"
+        name: 'Camiseta "Jesus is for everyone"'
     },
     {
         id: 6,
@@ -39,7 +39,7 @@ export const shirt = [
         id: 7,
         url: "https://images.tcdn.com.br/img/img_prod/1258065/camiseta_oversized_crista_unissex_para_todos_9_1_9689be74aeab08d2044f184ea37c3fe0.jpg",
         price: 89.99,
-        name: "Camiseta 'Jesus is for everyone"
+        name: 'Camiseta "Jesus is for everyone"'
     },
     {
         id: 8,
