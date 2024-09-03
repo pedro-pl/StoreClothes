@@ -24,7 +24,7 @@ export const Container = styled.div <FavProps>`
 
 export const ImageClothing = styled.img`
     width: 100%;
-    height: 77%;
+    height: 70%;
 `
 
 export const BuyButton = styled.button`
@@ -39,6 +39,7 @@ export const BuyButton = styled.button`
 
 export const NameClothing = styled.p`
     width: 100%;
+    height: 8.5%;
     font-size: 1rem;
     padding-left: 5px;
     white-space: nowrap;
@@ -47,6 +48,7 @@ export const NameClothing = styled.p`
 `
 
 export const PriceClothing = styled.p`
+    height: 8.5%;
     font-size: 0.8rem;
     margin-left: 5px;
     font-weight: 600;
