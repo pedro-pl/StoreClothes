@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 interface ClothingProps {
     url: string,
     price: number
+    name: string,
 }
 
 export function Card(props: ClothingProps){
@@ -18,11 +19,11 @@ export function Card(props: ClothingProps){
             {
                 fav ? <IoMdHeart size={22} onClick={() => setFav(false)} /> : <IoMdHeartEmpty size={22} onClick={() => setFav(true)}/>
             }
-            <ImageClothing src="https://images.tcdn.com.br/img/img_prod/1258065/camiseta_oversized_crista_unissex_para_todos_9_1_9689be74aeab08d2044f184ea37c3fe0.jpg" onClick={() => navigate('/produto')}/>
+            <ImageClothing src={props.url} onClick={() => navigate('/produto')}/>
 
             <BuyButton  onClick={() => navigate('/produto')}>COMPRAR</BuyButton>
 
-            <NameClothing>Camiseta</NameClothing>
+            <NameClothing>{props.name}</NameClothing>
             <PriceClothing>R$ {props.price.toString().replace('.', ',')}</PriceClothing>
         </Container>
     )

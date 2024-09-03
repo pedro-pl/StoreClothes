@@ -38,8 +38,12 @@ export const BuyButton = styled.button`
 `
 
 export const NameClothing = styled.p`
+    width: 100%;
     font-size: 1rem;
-    margin-left: 5px;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `
 
 export const PriceClothing = styled.p`
