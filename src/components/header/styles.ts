@@ -14,6 +14,10 @@ export const Container = styled.header`
     svg{
         cursor: pointer;
     }
+
+    h1{
+        cursor: pointer;
+    }
 `
 
 export const ShoppingBag = styled.div`
