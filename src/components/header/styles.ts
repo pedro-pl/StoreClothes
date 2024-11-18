@@ -89,9 +89,22 @@ export const Navbar = styled.nav`
         cursor: pointer;
         transition: 1s;
 
-        &:hover{
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: ${(props) => props.theme['black']};
+            transition: .3s ease-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        /* &:hover{
             border-bottom: 1.5px solid ${(props) => props.theme['black']};
             transition: 1s;
-        }
+        } */
     }
 `
