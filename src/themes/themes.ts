@@ -10,4 +10,7 @@ export const defaultTheme = {
     'red': '#ef233c',
     'white': '#FFF',
     'off-white': '#fefae0',
+
+    background: '#fefae0',
+    color: '#292929'
 }
