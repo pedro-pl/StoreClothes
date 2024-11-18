@@ -39,23 +39,24 @@ export const Menu = styled.div`
 `
 
 export const ModalMenu = styled.div<IsOpenProps>`
-    width: 50%;
-    height: 100vh;
+    height: 50vh;
     position: absolute;
-    margin-top: 90vh;
-    margin-left: ${(props) => props.isOpen ? "-10vw" : "-70vw"};
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
     background-color: ${(props) => props.theme['white']};
     transition: 0.3s;
-    display: flex;
+    display: ${(props) => props.isOpen ? "flex" : "none"};
     flex-direction: column;
     z-index: 999;
-    padding: 10px;
+    padding: 10px 10px 0 1.5rem;
     gap: 1.5rem;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.275rem;
 
     li{
         list-style: none;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         display: flex;
         align-items: center;
         gap: 0.5rem;

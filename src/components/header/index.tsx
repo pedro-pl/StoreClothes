@@ -19,11 +19,11 @@ export function Header(){
             <ModalMenu isOpen={isOpenMenu}>
                 <CgClose size={24} onClick={() => setIsOpenMenu(false)}/>
 
-                    <li onClick={() => navigate('/cadastro')}><IoPersonOutline size={20}/> Minha conta</li>
-                    <li><BsBoxSeam size={20}/> Meus pedidos</li>
-                    <li><IoShirtOutline size={20}/> Vestuário</li>
-                    <li><IoGlassesOutline size={20}/> Acessórios</li>
-                    <li><PiSneaker size={20}/> Calçados</li>
+                    <li onClick={() => navigate('/cadastro')}><IoPersonOutline size={22}/> Minha conta</li>
+                    <li><BsBoxSeam size={22}/> Meus pedidos</li>
+                    <li><IoShirtOutline size={22}/> Vestuário</li>
+                    <li><IoGlassesOutline size={22}/> Acessórios</li>
+                    <li><PiSneaker size={22}/> Calçados</li>
             </ModalMenu>
 
             <Menu>
