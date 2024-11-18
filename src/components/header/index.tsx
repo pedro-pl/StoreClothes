@@ -7,7 +7,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { BsBoxSeam } from "react-icons/bs";
 import { IoShirtOutline } from "react-icons/io5";
 import { IoGlassesOutline } from "react-icons/io5";
-import { GiConverseShoe } from "react-icons/gi";
+import { PiSneaker } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
 
 export function Header(){
@@ -23,7 +23,7 @@ export function Header(){
                     <li><BsBoxSeam size={20}/> Meus pedidos</li>
                     <li><IoShirtOutline size={20}/> Vestuário</li>
                     <li><IoGlassesOutline size={20}/> Acessórios</li>
-                    <li><GiConverseShoe size={20}/> Calçados</li>
+                    <li><PiSneaker size={20}/> Calçados</li>
             </ModalMenu>
 
             <Menu>
