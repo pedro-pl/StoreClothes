@@ -1,12 +1,18 @@
+import { Footer } from "../../components/footer";
 import { Header } from "../../components/header";
-import { Section } from "./components/section";
+import { SearchBar } from "../../components/searchBar";
+import { Carousel } from "./components/sectionCarousel";
+import { Category } from "./components/sectionCategory";
 import { Container } from "./styles";
 
 export function Home(){
     return(
         <Container>
             <Header/>
-            <Section Title="Lançamentos"/>
+            <SearchBar/>
+            <Carousel Title="Lançamentos"/>
+            <Category Title="Categorias"/>
+            <Footer/>
         </Container>
     )
 }
