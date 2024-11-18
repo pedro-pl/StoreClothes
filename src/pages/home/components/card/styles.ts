@@ -20,6 +20,13 @@ export const Container = styled.div <FavProps>`
         margin: 10px 10px 0 0;
         color: ${(props) => props.isFav ? props.theme['red'] : props.theme['gray-900']};
         cursor: pointer;
+        border-radius: 50%;
+        transition: all.2s;
+
+        &:hover{
+            color: ${(props) => props.isFav ? props.theme['red'] : props.theme['red']};
+            transition: all.2s;
+        }
     }
 
     @media (max-height: 400px) or (min-width: 500px){
@@ -38,6 +45,7 @@ export const Container = styled.div <FavProps>`
 export const ImageClothing = styled.img`
     width: 100%;
     height: 70%;
+    cursor: pointer;
 `
 
 export const BuyButton = styled.button`
